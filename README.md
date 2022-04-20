@@ -1,2 +1,2 @@
 # NVim-Config
-this branch if for linux
+This branch is for linux!
