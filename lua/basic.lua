@@ -1,6 +1,12 @@
 -- utf8
 vim.g.encoding = "UTF-8"
 
+vim.g.fdm = marker
+vim.cmd([[
+    au BufWinLeave * silent mkview
+    au BufWinEnter * silent loadview
+]])
+
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 

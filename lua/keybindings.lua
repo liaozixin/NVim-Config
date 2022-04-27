@@ -38,6 +38,4 @@ keymap('n', '<C-j>', '<Plug>(coc-diagnostic-next)', {noremap = false, silent = t
 keymap('n', '<C-k>', '<Plug>(coc-diagnostic-prev)', {noremap = false, silent = true})
 
 --markdown-preview
-keymap('n', '<C-v>', '<Plug>MarkdownPreview', {noremap = false})
-keymap('n', '<C-n>', '<Plug>MarkdownPreviewStop', {noremap = false})
-keymap('n', '<C-m>', '<Plug>MarkdownPreviewToggle', {noremap = false})
+keymap('n', '<C-b>', '<Plug>MarkdownPreview', {noremap = false})
