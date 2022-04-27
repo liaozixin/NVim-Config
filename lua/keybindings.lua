@@ -19,6 +19,7 @@ keymap('i', '[', '[]<ESC>i', {noremap = true})
 keymap('i', "'", "''<ESC>i", {noremap = true})
 keymap('i', '"', '""<ESC>i', {noremap = true})
 keymap('i', '{', '{}<ESC>i', {noremap = true})
+keymap('n', 't', '<cmd>terminal<CR>', opts)
 
 --nvimtree
 keymap('', '<C-n>', ':NvimTreeToggle<CR>', opts)

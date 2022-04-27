@@ -7,6 +7,11 @@ vim.cmd([[
     au BufWinEnter * silent loadview
 ]])
 
+vim.cmd([[
+	set path+=**
+    set wildmenu
+]])
+
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 
