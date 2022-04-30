@@ -1,4 +1,10 @@
 
 vim.cmd([[
-    let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-clangd', 'coc-cmake']
+  let g:coc_global_extensions = [
+    \'coc-json', 
+    \'coc-git', 
+    \'coc-clangd', 
+    \'coc-cmake', 
+    \'coc-clang-format-style-options'
+    \]
 ]])

@@ -20,6 +20,7 @@ keymap('i', "'", "''<ESC>i", {noremap = true})
 keymap('i', '"', '""<ESC>i', {noremap = true})
 keymap('i', '{', '{}<ESC>i', {noremap = true})
 keymap('n', 't', '<cmd>terminal<CR>', opts)
+keymap('n', 'lv', '<cmd>loadview<CR>', opts)
 
 --nvimtree
 keymap('', '<C-n>', ':NvimTreeToggle<CR>', opts)
@@ -37,6 +38,12 @@ keymap('n', 'gr', '<Plug>(coc-references)', {noremap = false, silent = true})
 keymap('n', 'rn', '<Plug>(coc-rename)', {noremap = false, silent = true})
 keymap('n', '<C-j>', '<Plug>(coc-diagnostic-next)', {noremap = false, silent = true})
 keymap('n', '<C-k>', '<Plug>(coc-diagnostic-prev)', {noremap = false, silent = true})
+keymap('', 'g[', '<Plug>(coc-diagnostic-prev)', {noremap = false, silent = true})
+keymap('', 'g]', '<Plug>(coc-diagnostic-next)', {noremap = false, silent = true})
+vim.cmd([[
+  command! -nargs=0 Format :call CocActionAsync('format')
+
+]])
 
 --markdown-preview
 keymap('n', '<C-b>', '<Plug>MarkdownPreview', {noremap = false})
