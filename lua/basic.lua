@@ -3,11 +3,16 @@ vim.g.encoding = "UTF-8"
 
 vim.g.fdm = marker
 vim.cmd([[
-    au BufWinLeave * silent mkview
-
     set path+=**
     set wildmenu
     
+    set nobackup
+    set noswapfile
+    set nowritebackup
+    set noundofile
+
+    let g:python3_host_prog='D:/Anaconda3/envs/NeoVim/python.exe'
+    let g:python_host_prog='D:/Anaconda3/envs/NeoVim/python.exe'
 ]])
 
 vim.o.scrolloff = 8
