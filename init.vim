@@ -1,5 +1,4 @@
 lua require('basic')
-lua require('keybindings')
 
 call plug#begin('~\AppData\Local\nvim\plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -26,3 +25,7 @@ lua require('plugin-config\\nvim-treesitter')
 lua require('plugin-config\\bufferline')
 lua require('plugin-config\\coc-vim')
 lua require('plugin-config\\markdown-preview')
+lua require('plugin-config\\neovim-session-manager')
+
+lua require('keybindings')
+

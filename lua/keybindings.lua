@@ -38,12 +38,7 @@ keymap('n', 'gr', '<Plug>(coc-references)', {noremap = false, silent = true})
 keymap('n', 'rn', '<Plug>(coc-rename)', {noremap = false, silent = true})
 keymap('n', '<C-j>', '<Plug>(coc-diagnostic-next)', {noremap = false, silent = true})
 keymap('n', '<C-k>', '<Plug>(coc-diagnostic-prev)', {noremap = false, silent = true})
-keymap('', 'g[', '<Plug>(coc-diagnostic-prev)', {noremap = false, silent = true})
-keymap('', 'g]', '<Plug>(coc-diagnostic-next)', {noremap = false, silent = true})
-vim.cmd([[
-  command! -nargs=0 Format :call CocActionAsync('format')
-
-]])
+keymap('x', '<leader>fs', '<Plug>(coc-format-selected)', {noremap = false, silent = true})
 
 --markdown-preview
 keymap('n', '<C-b>', '<Plug>MarkdownPreview', {noremap = false})
